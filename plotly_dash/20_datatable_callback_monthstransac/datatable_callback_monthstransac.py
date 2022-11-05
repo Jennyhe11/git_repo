@@ -22,6 +22,8 @@ df = df.pivot_table(index = ['Product'] ,columns = ['Year','Month'], values = 'S
 
 
 app = Dash(__name__)
+server = app.server
+
 
 app.layout = html.Div([
     html.H4('This is an DataTable'),
